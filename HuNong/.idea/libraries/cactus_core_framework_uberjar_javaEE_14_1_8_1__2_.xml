@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cactus.core.framework.uberjar.javaEE.14-1.8.1 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/lib/cactus.core.framework.uberjar.javaEE.14-1.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

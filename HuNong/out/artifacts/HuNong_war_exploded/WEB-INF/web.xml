@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <servlet>
+        <servlet-name>AndroidServlet</servlet-name>
+        <servlet-class>com.geowind.hunong.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AndroidServlet</servlet-name>
+        <url-pattern>/AndroidServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>/login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>ServletRedirector</servlet-name>
+        <servlet-class>org.apache.cactus.server.ServletTestRedirector</servlet-class>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>value1 used for testing</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletTestRunner</servlet-name>                <servlet-class>org.apache.cactus.server.runner.ServletTestRunner</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRedirector</servlet-name>
+        <url-pattern>/ServletRedirector</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletTestRunner</servlet-name>
+        <url-pattern>/ServletTestRunner</url-pattern>
+    </servlet-mapping>
+
+</web-app>
